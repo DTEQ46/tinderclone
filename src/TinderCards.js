@@ -9,7 +9,7 @@ function TinderCards() {
   useEffect(() => {
     async function fetchData() {
       const res = await axios.get(
-        ' https://tinderbackend46.herokuapp.com/tinder/cards'
+        'https://tinderbackend.vercel.app/tinder/cards'
       );
       setPeople(res.data);
     }
